@@ -19,7 +19,6 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaMediumM } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
-
 import { IoLocationSharp } from "react-icons/io5";
 import { FaLanguage } from "react-icons/fa6";
 import { PiBagSimpleFill } from "react-icons/pi";
@@ -34,7 +33,6 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaNodeJs } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-
 import pp from '../public/images/profilephoto.jpeg';
 import { useState, useEffect } from "react";
 import Link from "next/link";
