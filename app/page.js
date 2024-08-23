@@ -80,7 +80,7 @@ export default function Home() {
           <div className="flex w-full h-88 justify-between items-center">
             <div className="w-72  h-48 m-1 flex flex-col items-center justify-center rounded-lg bg-gradient-to-b from-slate-700 to-black border border-slate-600">
               <div className="flex">
-                <AnimatedCounter endValue={60}/>
+                <AnimatedCounter endValue={60} />
                 <h3 className="text-violet-600 font-semibold text-4xl">+</h3>
               </div>
               <div className="w-4/5 mt-2 border border-slate-600 h-8 rounded-lg flex items-center justify-center">
@@ -92,7 +92,7 @@ export default function Home() {
             </div>
             <div className="w-72 h-48 m-1 flex flex-col items-center justify-center rounded-lg bg-gradient-to-b from-slate-700 to-black border border-slate-600">
               <div className="flex">
-              <AnimatedCounter endValue={200}/>
+                <AnimatedCounter endValue={200} />
                 <h3 className="text-violet-600 font-semibold text-4xl">+</h3>
               </div>
               <div className="w-4/5 mt-2 max-sm:w-full border border-slate-600 h-8 rounded-lg flex items-center justify-center">
@@ -104,7 +104,7 @@ export default function Home() {
             </div>
             <div className="w-72 h-48 m-1 flex flex-col items-center justify-center rounded-lg bg-gradient-to-b from-slate-700 to-black border border-slate-600">
               <div className="flex">
-              <AnimatedCounter endValue={4}/>
+                <AnimatedCounter endValue={4} />
                 <h3 className="text-violet-600 font-semibold text-4xl">+</h3>
               </div>
               <div className="w-4/5 mt-2 border border-slate-600 h-8 rounded-lg flex items-center justify-center">
@@ -164,52 +164,64 @@ export default function Home() {
               <h3 className="text-center ml-2 text-slate-300">My Projects</h3>
             </div>
             <div className="flex-col pl-5 pr-5 items-center justify-center font-poppins mt-5">
-              <div className="h-10 flex items-center pl-2 pr-2 w-full border border-slate-600 rounded-lg">
-                <div className="rounded-lg w-8 h-8 flex items-center justify-center">
-                  <SiQuizlet className="text-white" />
+              <Link target="_blank" href={"https://play.google.com/store/apps/details?id=com.kaan.quizzr&hl=tr"}>
+                <div className="h-10 flex items-center pl-2 pr-2 w-full border border-slate-600 rounded-lg">
+                  <div className="rounded-lg w-8 h-8 flex items-center justify-center">
+                    <SiQuizlet className="text-white" />
+                  </div>
+                  <h3 className="text-white text-xs">Quizzr - A quiz app for Android</h3>
                 </div>
-                <h3 className="text-white text-xs">Quizzr - A quiz app for Android</h3>
+              </Link>
+            </div>
+            <Link target="_blank" href={"https://play.google.com/store/apps/details?id=com.worditory.worditory&hl=en_US"} >
+              <div className="flex-col pl-5 pr-5 items-center justify-center font-poppins mt-2">
+                <div className="h-10 flex items-center pl-2 pr-2 w-full border border-slate-600 rounded-lg">
+                  <div className="rounded-lg w-8 h-8 flex items-center justify-center">
+                    <IoLanguageSharp className="text-white" />
+                  </div>
+                  <h3 className="text-white text-xs">Worditory - English learning application</h3>
+                </div>
               </div>
+            </Link>
+            <div className="flex-col pl-5 pr-5 items-center justify-center font-poppins mt-2">
+              <Link target="_blank" href={"https://play.google.com/store/apps/details?id=com.kaan.habit_together"} >
+                <div className="h-10 flex items-center pl-2 pr-2 w-full border border-slate-600 rounded-lg">
+                  <div className="rounded-lg w-8 h-8 flex items-center justify-center">
+                    <GiHabitatDome className="text-white" />
+                  </div>
+                  <h3 className="text-white text-xs">Habit Together - An online habit tracking app</h3>
+                </div>
+              </Link>
             </div>
             <div className="flex-col pl-5 pr-5 items-center justify-center font-poppins mt-2">
-              <div className="h-10 flex items-center pl-2 pr-2 w-full border border-slate-600 rounded-lg">
-                <div className="rounded-lg w-8 h-8 flex items-center justify-center">
-                  <IoLanguageSharp className="text-white" />
+              <Link target="_blank" href={"https://pikargom.com"} >
+                <div className="h-10 flex items-center pl-2 pr-2 w-full border border-slate-600 rounded-lg">
+                  <div className="rounded-lg w-8 h-8 flex items-center justify-center">
+                    <GiCargoShip className="text-white" />
+                  </div>
+                  <h3 className="text-white text-xs">Pikargom - Ship to all over the world!</h3>
                 </div>
-                <h3 className="text-white text-xs">Worditory - English learning application</h3>
-              </div>
+              </Link>
             </div>
             <div className="flex-col pl-5 pr-5 items-center justify-center font-poppins mt-2">
-              <div className="h-10 flex items-center pl-2 pr-2 w-full border border-slate-600 rounded-lg">
-                <div className="rounded-lg w-8 h-8 flex items-center justify-center">
-                  <GiHabitatDome className="text-white" />
-                </div>
-                <h3 className="text-white text-xs">Habit Together - An online habit tracking app</h3>
-              </div>
-            </div>
-            <div className="flex-col pl-5 pr-5 items-center justify-center font-poppins mt-2">
-              <div className="h-10 flex items-center pl-2 pr-2 w-full border border-slate-600 rounded-lg">
-                <div className="rounded-lg w-8 h-8 flex items-center justify-center">
-                  <GiCargoShip className="text-white" />
-                </div>
-                <h3 className="text-white text-xs">Pikargom - Ship to all over the world!</h3>
-              </div>
-            </div>
-            <div className="flex-col pl-5 pr-5 items-center justify-center font-poppins mt-2">
+              <Link target="_blank" href={"https://youthink.com.tr"} >
               <div className="h-10 flex items-center pl-2 pr-2 w-full border border-slate-600 rounded-lg">
                 <div className="rounded-lg w-8 h-8 flex items-center justify-center">
                   <SiFuturelearn className="text-white" />
                 </div>
                 <h3 className="text-white text-xs">Youthink - Learning management system</h3>
               </div>
+              </Link>
             </div>
             <div className="flex-col pl-5 pr-5 items-center justify-center font-poppins mt-2">
-              <div className="h-10 flex items-center pl-2 pr-2 w-full border border-slate-600 rounded-lg">
-                <div className="rounded-lg w-8 h-8 flex items-center justify-center">
-                  <FaShoppingBasket className="text-white" />
+              <Link target="_blank" href={"https://apps.apple.com/tr/app/mopa%C5%9F-online-supermarket/id1546294060"} >
+                <div className="h-10 flex items-center pl-2 pr-2 w-full border border-slate-600 rounded-lg">
+                  <div className="rounded-lg w-8 h-8 flex items-center justify-center">
+                    <FaShoppingBasket className="text-white" />
+                  </div>
+                  <h3 className="text-white text-xs">Mopaş - E-Commerce app</h3>
                 </div>
-                <h3 className="text-white text-xs">Mopaş - E-Commerce app</h3>
-              </div>
+              </Link>
             </div>
             <div className="flex-col pl-5 pr-5 items-center justify-center font-poppins mt-2">
               <div className="h-10 flex items-center pl-2 pr-2 w-full border border-slate-600 rounded-lg">
