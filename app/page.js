@@ -28,6 +28,8 @@ import { IoLanguageSharp } from "react-icons/io5";
 import { GiHabitatDome } from "react-icons/gi";
 import { IoMail } from "react-icons/io5";
 import { GiCargoShip } from "react-icons/gi";
+import { RiNextjsFill } from "react-icons/ri";
+
 import { SiAudiotechnica } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { RiTailwindCssFill } from "react-icons/ri";
@@ -232,7 +234,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="w-2/5  max-md:w-full  max-md:mt-5 max-sm:w-full    max-sm:mt-5 pt-10 rounded-lg h-[600px] ml-2 bg-gradient-to-b from-slate-700 to-black border border-slate-600">
+          <div className="w-2/5  max-md:w-full  max-md:mt-5 max-sm:w-full    max-sm:mt-5 pt-10 rounded-lg h-full ml-2 bg-gradient-to-b from-slate-700 to-black border border-slate-600">
             <div className="flex mt-2 items-center justify-center">
               <SiAudiotechnica className="text-violet-600" />
               <h3 className="text-center ml-2 text-slate-300">Technologies</h3>
@@ -267,6 +269,14 @@ export default function Home() {
                   <FaReact className="text-blue-400" />
                 </div>
                 <h3 className="text-white text-xs">React</h3>
+              </div>
+            </div>
+            <div className="flex-col pl-5 pr-5 items-center justify-center font-poppins mt-2">
+              <div className="h-10 flex items-center pl-2 pr-2 w-full border border-slate-600 rounded-lg">
+                <div className="rounded-lg w-8 h-8 flex items-center justify-center">
+                  <RiNextjsFill className="text-yellow-400" />
+                </div>
+                <h3 className="text-white text-xs">Next JS</h3>
               </div>
             </div>
             <div className="flex-col pl-5 pr-5 items-center justify-center font-poppins mt-2">
