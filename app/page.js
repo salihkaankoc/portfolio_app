@@ -124,7 +124,7 @@ export default function Home() {
             </div>
             <div className="flex w-full ml-5 items-center">
               <div className="w-24 h-24 rounded-lg object-cover">
-                <Image className="rounded-lg" src={pp} objectFit="cover" />
+                <Image key="pp" className="rounded-lg" src={pp} objectFit="cover" />
               </div>
               <div className="flex  m-2 font-poppins flex-col">
                 <div className="w-[150px] pl-2 pr-2 border border-slate-600 h-8 rounded-lg flex items-center justify-center">
@@ -141,8 +141,8 @@ export default function Home() {
 
             </div>
             <div className="flex grid grid-cols-3 max-sm:grid-cols-2 pl-5 pr-5 w-full font-poppins justify-between gap-2">
-              {sections.map((sec) => (
-                <div className="w-full border border-slate-600 h-8 rounded-lg flex items-center justify-center">
+              {sections.map((sec, i) => (
+                <div key={i} className="w-full border border-slate-600 h-8 rounded-lg flex items-center justify-center">
                   <div className="text-violet-600">{sec.icon}</div>
                   <h3 className="text-white ml-1 text-sm">{sec.desc}</h3>
                 </div>
